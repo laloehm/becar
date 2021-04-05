@@ -62,6 +62,14 @@ h4 {
     color: #ec7623;
 }
 
+.text_gray {
+    color: #53535a;
+}
+
+.text_black {
+    font-family: 'Nexa-Black', serif;
+}
+
 /* HEADER */
 [data-icon="hamburguer-bar"] {
     height: 3px;
@@ -186,6 +194,7 @@ h4 {
     background: rgba(228, 60, 47, .7);
     top: 0;
     left: 0;
+    z-index: 1030;
 }
 
 .redes img {
@@ -357,6 +366,38 @@ h4 {
     margin-top: 120px;
 }
 
+.row_mision .col-md-5 {
+    z-index: 1;
+}
+
+.row_vision {
+    height: 260px;
+    position: relative;
+    top: -100px;
+}
+
+.valores .col-md-7 div {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.valores .col-md-7 div p {
+    margin: 0;
+}
+
+.modelo_referencia {
+    background: #d5cdcd;
+}
+
+.modelo_referencia .col-md-9 p,
+.modelo_educativo .col-md-9 p {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     background: #ed5b1a;
@@ -464,6 +505,11 @@ footer .copyright a {
         right: 0px;
         width: 100%;
         margin: 15px 0;
+    }
+
+    /* Nosotros */
+    .row_vision {
+        top: 0;
     }
 
     footer .logos img {
