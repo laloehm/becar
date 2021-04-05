@@ -12,3 +12,17 @@
 $('.navbar-toggle').on('click', function () {
     $('.collapse').fadeToggle();
 })
+
+$('.ir_arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 900 ){
+			$('.ir_arriba').addClass('d-flex');
+		} else {
+			$('.ir_arriba').removeClass('d-flex');
+		}
+	});

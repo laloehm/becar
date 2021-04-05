@@ -134,6 +134,38 @@ h4 {
     }
 }
 
+.ir_arriba {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #ffd100;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 1060;
+    display: none;
+}
+
+.ir_arriba img {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar .bt_donar {
+    display: block;
+    margin-left: auto;
+    color: white;
+    font-family: 'Nexa-Black';
+    margin-right: 15px;
+}
+
 .navbar-toggle {
     z-index: 1040;
 }
