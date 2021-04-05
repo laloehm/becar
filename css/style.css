@@ -237,6 +237,25 @@ h4 {
     position: relative;
 }
 
+.row_about .title::after,
+.row_que_hacemos .title::after,
+.help h2.title::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 15px 0;
+}
+
+.row_about .title::after,
+.help h2.title::after {
+    background: #ffd100;
+}
+
+.row_que_hacemos .title::after {
+    background: #e43c2f;
+}
+
 .about .row_about,
 .about .row_que_hacemos {
     height: 450px;
