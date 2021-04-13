@@ -30,6 +30,18 @@ h4 {
     font-family: 'Nexa-Black', serif;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
 .font-weight-regular {
     font-family: 'Nexa-regular', serif;
 }
@@ -54,6 +66,10 @@ h4 {
     background: #d5cdcd;
 }
 
+.bg_gray_dos {
+    background: #53535a;
+}
+
 .bg_yellow {
     background: #ffd100;
 }
@@ -68,6 +84,10 @@ h4 {
 
 .text_black {
     font-family: 'Nexa-Black', serif;
+}
+
+.text_yellow {
+    color: #ffd100;
 }
 
 /* HEADER */
@@ -179,7 +199,7 @@ h4 {
 }
 
 .nav-link {
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Nexa-Black';
 }
 
@@ -215,7 +235,7 @@ h4 {
 }
 
 .home h2 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .home h2 span {
@@ -319,7 +339,7 @@ h4 {
 }
 
 .impact .col-md-3 p {
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Nexa-Black', serif;
     line-height: 26px;
     margin-top: 18px;
@@ -398,6 +418,132 @@ h4 {
     margin-bottom: 20px;
 }
 
+/* Galeria */
+.galeria_eventos {
+    margin-top: 140px;
+    background: #d5cdcd;
+}
+
+.galeria_eventos ul li,
+.galeria_colegios ul li {
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.galeria_eventos ul li::after,
+.galeria_colegios ul li::after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    background: #ffd100;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 50px;
+}
+
+.galeria_eventos .col-md-7 h2::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #ffd100;
+    margin: 15px 0 40px 0;
+}
+
+.galeria_eventos .carousel-indicators,
+.galeria_colegios .carousel-indicators {
+    bottom: -40px;
+}
+
+.galeria_eventos .carousel-indicators li,
+.galeria_colegios .carousel-indicators li {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.galeria_eventos .carousel-indicators li.active,
+.galeria_colegios .carousel-indicators li.active {
+    background: #fff;
+}
+
+/* Noticias */
+
+.news {
+    margin-top: 130px;
+}
+
+.news .more_info {
+    width: 40px;
+    margin: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.news .card {
+    height: 600px;
+}
+
+.card_title {
+    text-transform: uppercase;
+    height: 80px;
+}
+
+/* Contact */
+.contact {
+    margin-top: 130px;
+}
+
+.contact .col-md-4 .bg_gray_dos,
+.contact .col-md-4 .bg_red,
+.contact .col-md-4 .bg_orange {
+    height: 22%;
+}
+
+.contact .col-md-4 .bg_yellow {
+    height: 34%;
+}
+
+.contact iframe {
+    height: 400px;
+    width: 100%;
+    border: none;
+}
+
+.contact .col-md-4 .btn_donar {
+    background: #ec7623;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.form-control {
+    height: calc(2.2em + .75rem + 2px);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contact .btn-primary {
+    margin-left: auto;
+    display: block;
+    background: #ec7623;
+    border: none;
+    width: 120px;
+    border-radius: 30px;
+    line-height: 20px;
+}
+
 /* Footer */
 footer {
     background: #ed5b1a;
@@ -407,13 +553,17 @@ footer .logos {
     border-bottom: 3px solid #fff;
 }
 
+footer .logos img {
+    width: 180px;
+}
+
 footer .links a {
     color: #fff;
 }
 
 footer .redes a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
     background-size: cover;
     background-position: center;
@@ -436,6 +586,14 @@ footer .copyright a {
     color: #ffd100;
 }
 
+@media (max-width: 991px) {
+    .contact iframe {
+        height: 500px;
+        width: 100%;
+        border: none;
+    }
+}
+
 @media (max-width: 767px) {
     .navbar-brand {
         width: 120px;
@@ -447,6 +605,10 @@ footer .copyright a {
 
     .redes img {
         width: 30px;
+    }
+
+    h2.title {
+        font-size: 1.6rem;
     }
 
     .home {
@@ -507,9 +669,34 @@ footer .copyright a {
         margin: 15px 0;
     }
 
+    /* Galería */
+    .galeria_eventos ul li::after,
+    .galeria_colegios ul li::after {
+        left: 15px;
+    }
+
     /* Nosotros */
     .row_vision {
         top: 0;
+    }
+
+    /* Contact */
+    .contact .container {
+        padding: 0;
+    }
+
+    .contact .col-md-4 .bg_gray_dos,
+    .contact .col-md-4 .bg_red,
+    .contact .col-md-4 .bg_orange {
+        height: 100px;
+    }
+
+    .contact .col-md-4 .bg_yellow {
+        height: 170px;
+    }
+
+    .contact form {
+        padding: 0 15px;
     }
 
     footer .logos img {
@@ -519,5 +706,9 @@ footer .copyright a {
     footer .redes a {
         width: 32px;
         height: 32px;
+    }
+
+    footer .links a {
+        text-align: center;
     }
 }
