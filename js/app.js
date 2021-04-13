@@ -19,10 +19,10 @@ $('.ir_arriba').click(function(){
 		}, 300);
 	});
 
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 900 ){
+$(window).scroll(function(){
+	if( $(this).scrollTop() > 900 ){
 			$('.ir_arriba').addClass('d-flex');
-		} else {
+	} else {
 			$('.ir_arriba').removeClass('d-flex');
-		}
-	});
+	}
+});

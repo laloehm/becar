@@ -227,7 +227,7 @@ h3 {
 }
 
 .redes img {
-    width: 45px;
+    width: 30px;
     margin: 8px;
 }
 
@@ -250,7 +250,7 @@ h3 {
 .home h2 span {
     font-family: 'Nexa-Black';
     font-size: 70px;
-    line-height: 80px;
+    line-height: 65px;
     display: block;
 }
 
@@ -260,7 +260,7 @@ h3 {
 }
 
 .about .bg_orange p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .about .box_about {
@@ -348,13 +348,21 @@ h3 {
 }
 
 .impact .col-md-3 p {
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Nexa-Black', serif;
     line-height: 26px;
     margin-top: 18px;
     margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.impact .col-md-3 img {
+    width: 80px;
+}
+
+.impact .col-md-3:nth-child(4) img {
+    width: 60px;
 }
 
 .impact .more-info {
