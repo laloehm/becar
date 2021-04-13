@@ -15,6 +15,11 @@
     font-family: 'Nexa-Regular', serif;
 }
 
+p,
+a {
+    font-size: 14.5px;
+}
+
 .h-80 {
     height: 80%;
 }
@@ -186,6 +191,10 @@ h3 {
     width: 100%;
 }
 
+.navbar-brand img {
+    width: 140px;
+}
+
 .navbar .bt_donar {
     display: block;
     margin-left: auto;
@@ -240,7 +249,7 @@ h3 {
 
 .home h2 span {
     font-family: 'Nexa-Black';
-    font-size: 90px;
+    font-size: 70px;
     line-height: 80px;
     display: block;
 }
@@ -350,6 +359,10 @@ h3 {
 
 .impact .more-info {
     font-size: 1.2rem;
+}
+
+.impact .jumbotrom p {
+    font-size: 18px;
 }
 
 .testimonials {
@@ -554,7 +567,7 @@ footer .logos {
 }
 
 footer .logos img {
-    width: 180px;
+    width: 140px;
 }
 
 footer .links a {
